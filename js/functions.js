@@ -107,13 +107,4 @@ $(function(){
 		);
 	}
 
-
-
-
-	//BUG
-
-	//Qnd sai de um tipo de menu pro outro o background não mantém nos icones do menu
-	// ver nos exemplos anteriores, mas não precisa fazer isso, não há essa troca de tela, porém precisa fazer o mobile iniciar do mesmo jeito do desktop.
-	
-
 })
