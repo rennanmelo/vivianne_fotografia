@@ -1,5 +1,4 @@
 $(function(){
-
 //////////////// Page 1 ////////////////
 
 	var indiceSlideAtual = 0;
@@ -8,7 +7,6 @@ $(function(){
 	var imgSlider = ('.slider img');
 
 	initSlider();
-	
 
 	//Adicionando spans dinamicamente
 	for(var i=0; i < indiceSlideMaximo; i++){
@@ -51,11 +49,6 @@ $(function(){
 		$('.bullets span').eq(indiceSlideAtual).css('background-color','rgb(247, 120, 56)');
 		$(imgSlider).eq(indiceSlideAtual).fadeIn(2000);
 	}
-
-	
-
-
-//////////////// Slider Pages ////////////////
 	
 //Config iniciais do site
 
@@ -94,7 +87,6 @@ $(function(){
 	}
 
 // Config. Page 2
-	
 	categoriasHover();
 	function categoriasHover(){
 		$('.mosaico-single').hover(
@@ -106,5 +98,4 @@ $(function(){
 			}
 		);
 	}
-
 })
