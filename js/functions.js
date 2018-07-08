@@ -1,4 +1,5 @@
 $(function(){
+
 //////////////// Page 1 ////////////////
 
 	var indiceSlideAtual = 0;
@@ -34,8 +35,7 @@ $(function(){
 			indiceSlideAtual = $(this).index();
 			$(imgSlider).eq(indiceSlideAtual).stop().fadeIn(2000);
 			$('.bullets span').css('background-color','rgb(50,50,50)');
-			$(this).css('background-color','rgb(247, 120, 56)');
-			
+			$(this).css('background-color','rgb(247, 120, 56)');		
 		})
 	}
 
@@ -49,9 +49,14 @@ $(function(){
 		$('.bullets span').eq(indiceSlideAtual).css('background-color','rgb(247, 120, 56)');
 		$(imgSlider).eq(indiceSlideAtual).fadeIn(2000);
 	}
-	
-//Config iniciais do site
 
+	$(function(){
+		$('.menu-mobile').click(function(){
+		$(this).find('ul').slideToggle();
+		})
+	})	
+
+//////////////// Slider Pages ////////////////
 	var indicePageAtual = 0;
 
 	initPageSlider();
@@ -60,9 +65,6 @@ $(function(){
 		$('.menu ul li').eq(0).css('background-color','rgba(247, 120, 56, 0.6)');
 	}
 
-		
-
-//Menu e Mudança de paginas
 	menuHover();	
 	function menuHover(){
 		$('.menu li').hover(
@@ -86,15 +88,16 @@ $(function(){
 		})
 	}
 
-// Config. Page 2
+//////////////// Page 2 ////////////////
+	
 	categoriasHover();
 	function categoriasHover(){
 		$('.mosaico-single').hover(
 			function(){
+				$('.mosaico-single').css('opacity','0.6');
 				$(this).css('opacity','1');
 			},
 			function(){
-				$(this).css('opacity','0.6');
 			}
 		);
 	}
